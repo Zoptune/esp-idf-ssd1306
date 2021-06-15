@@ -1,4 +1,4 @@
-set(COMPONENT_SRCS main.c ssd1306.c ssd1306_i2c.c ssd1306_spi.c)
-set(COMPONENT_ADD_INCLUDEDIRS ".")
+set(COMPONENT_SRCS main.c)
+set(COMPONENT_REQUIRES ssd1306)
 
 register_component()

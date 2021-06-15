@@ -1,5 +1,10 @@
 # esp-idf-ssd1306
-SSD1306/SH1106 driver for esp-idf
+
+Fork of [nopnop2002's esp-idf-ssd1306 project](https://github.com/nopnop2002/esp-idf-ssd1306)   
+
+# Original README
+
+SSD1306/SH1106 driver for esp-idf   
 
 I used [this](https://github.com/yanbe/ssd1306-esp-idf-i2c) repository as a reference.   
 I used [this](https://github.com/dhepper/font8x8) font file.   
@@ -7,7 +12,7 @@ I used [this](https://github.com/dhepper/font8x8) font file.
 # Installation for ESP32
 
 ```
-git clone https://github.com/nopnop2002/esp-idf-ssd1306
+git clone https://github.com/Zoptune/esp-idf-ssd1306
 cd esp-idf-ssd1306/
 idf.py set-target esp32
 idf.py menuconfig
@@ -17,14 +22,14 @@ idf.py flash
 # Installation for ESP32-S2
 
 ```
-git clone https://github.com/nopnop2002/esp-idf-ssd1306
+git clone https://github.com/Zoptune/esp-idf-ssd1306
 cd esp-idf-ssd1306/
 idf.py set-target esp32s2
 idf.py menuconfig
 idf.py flash
 ```
 
-You have to set this config value with menuconfig.   
+You have to set this config value with menuconfig under menu `Component config -> SSD1306 Configuration`.   
 - CONFIG_INTERFACE   
 - CONFIG_PANEL   
 - CONFIG_OFFSETX   
